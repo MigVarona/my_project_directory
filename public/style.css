@@ -1,0 +1,84 @@
+body {
+    background: #e7edff;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+}
+
+form {
+    width: 458px;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+a {
+    width: 19.5%;
+    margin-right: 0.6%;
+    align-content: center;
+    text-align: center;
+    line-height: 3;
+    font-family: Arial, Helvetica, sans-serif;
+    color: green;
+}
+
+input,
+textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+}
+
+table {
+    background-color: white;
+    border-collapse: collapse;
+    text-align: left;
+    width: 50%;
+}
+
+th,
+td {
+    text-align: center;
+}
+
+#tablaShow {
+    width: 20%;
+}
+
+#boton {
+    background: #31384A;
+    color: white;
+    padding: 10px;
+}
+
+#boton:hover {
+    cursor: pointer;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "header header header"
+        "contenido contenido contenido"
+        "widget-1 widget-2 sidebar"
+        "footer footer footer";
+
+}
+
+.contenedor .contenido {
+    grid-area: contenido;
+    background: #fff;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+}

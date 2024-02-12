@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Lista{% endblock %}
+
+{% block body %}
+    <h1>Lista</h1>
+
+    <table id=tablaShow" class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ listum.id }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_lista_index') }}">back to list</a>
+
+    <a href="{{ path('app_lista_edit', {'id': listum.id}) }}">edit</a>
+
+    {{ include('lista/_delete_form.html.twig') }}
+{% endblock %}
